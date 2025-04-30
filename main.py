@@ -1,4 +1,3 @@
-from datetime import date
 from typing import List, Optional, Callable
 
 from dotenv import load_dotenv
@@ -12,7 +11,7 @@ applicant_data =  [
       name_last = "Passing",
       birth_date = "1990-01-01",
       ssn = "123456789",
-      email = "john.doe@example.com",
+      email = "john.passing@example.com",
       address_line_1 = "123 Main St",
       address_line_2 = "Apt 1",
       address_city = "Anytown",
@@ -21,11 +20,11 @@ applicant_data =  [
       address_country_code = "US"
     ),
     models.Applicant(
-      name_first = "Invalid",
+      name_first = "Willnot",
       name_last = "Fail",
       birth_date = "1990-01-01",
       ssn = "123456789",
-      email = "invalid.fail@example.com",
+      email = "willnot.fail@example.com",
       address_line_1 = "123 Main St",
       address_line_2 = "Apt 1",
       address_city = "Anytown",
@@ -47,11 +46,11 @@ applicant_data =  [
         address_country_code = "US"
     ),
     models.Applicant(
-        name_first = "Please",
+        name_first = "You",
         name_last = "Deny",
         birth_date = "1990-01-01",
         ssn = "123456789",
-        email = "please.deny@example.com",
+        email = "you.deny@example.com",
         address_line_1 = "123 Main St",
         address_line_2 = "Apt 1",
         address_city = "Anytown",
