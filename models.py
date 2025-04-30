@@ -1,6 +1,6 @@
 from email_validator import validate_email, EmailNotValidError
 from pydantic import BaseModel, Field, field_validator
-from typing import List, Optional, Tuple
+from typing import Optional, Tuple
 import re
 from datetime import datetime, date
 
@@ -85,7 +85,3 @@ def is_email_valid(email: str) -> Tuple[bool, str]:
     except EmailNotValidError as e:
         return (False, f"Invalid email format: {e}")
     
-    
-# TODO
-# serialize response from alloy 
-# remove pbd
