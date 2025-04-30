@@ -62,3 +62,8 @@ The application will:
 2. Allow you to choose a sample applicant or enter custom data
 3. Submit the applicant data to Alloy
 4. Display the evaluation outcome
+
+## How Ai was used during the creation of this app
+
+1. Used when looking up things on google i.e forgotten syntax (gemini is enabled by default)
+2. Used intellisense to help with function typing, method peaking, autocomplete
