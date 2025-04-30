@@ -89,9 +89,9 @@ def collect_applicant_details() -> models.Applicant:
     zip_code=input("ZIP Code: ").strip()
     
     return models.Applicant(
-        first_name=first_name,
-        last_name=last_name,
-        date_of_birth=date_of_birth,
+        name_first=first_name,
+        name_last=last_name,
+        birth_date=date_of_birth,
         ssn=ssn,
         email=email,
         address_line_1=line1,
@@ -148,7 +148,7 @@ def main():
            submit_applicant(client, applicant) 
         else:
            applicant = collect_applicant_details()
-           submit_applicant(applicant)
+           submit_applicant(client, applicant)
                   
     except Exception as e:
         print(f"\nAn error occurred: {str(e)}")
